@@ -1,0 +1,55 @@
+#notas
+n1= int(input("digite uma nota "))
+n2= int(input("digite uma nota "))
+n3= int(input("digite uma nota "))
+media= (n1+n2+n3)/3
+if media >= 0 and media < 3:
+  print("Reprovado")
+elif media >= 3 and media < 7 :
+  print("Recuperação")
+else:
+  print("Aprovado")
+
+
+#equaçoes
+a= float(input("digite um numero "))
+b= float(input("digite um numero "))
+c= float(input("digite um numero "))
+delta= (b**2)-(4*a*c)
+
+if delta <0:
+  print("não exite raiz real")
+
+elif delta ==0:
+ x = -b/(2*a)
+ print("exite uma raiz real")
+
+else:
+ delta >0
+ print("exite duas raizes reais")
+ x1= (-b + math.sqrt(delta))/(2*a)
+ x2= (-b - math.sqrt(delta))/(2*a)
+ print(x1,x2)
+
+#imc
+massa= float(input("digite seu peso  "))
+alt= float(input("digite sua altura "))
+imc= massa/(alt**2)
+if imc < 20.0:
+  print("abaixo do peso")
+elif imc >= 20 and imc < 25:
+  print("peso normal")
+elif imc >= 25 and imc < 30:
+  print("sobre peso")
+elif imc >= 30 and imc < 40:
+  print("obeso")
+elif imc >= 40:
+  print("obeso morbido")
+
+
+
+
+
+
+
+
