@@ -45,11 +45,102 @@ elif imc >= 30 and imc < 40:
   print("obeso")
 elif imc >= 40:
   print("obeso morbido")
+ 
+# funcção x
+ x = float(input("digite o valor de X "))
+if x <-2 :
+ fx =2*x + 2
+elif x <3:
+ fx = 3
+else:
+ fx= -x
+ print(f"f(x) = {fx}")
+
+#tringulo
+ladoA= float(input("digite o primeiro lado  "))
+ladoB= float(input("digite o segundo lado  "))
+ladoC= float(input("digite o terceiro  lado "))
+
+if ((ladoA==ladoB) and (ladoA==ladoC)):
+  print("equilatro")
+elif ((ladoA==ladoB) or (ladoA==ladoC) or (ladoB==ladoC)):
+  print("isoceles")
+else:
+  print("escaleno")
+
+#escolha
+n1=float(input("digite um numero "))
+n2=float(input("digite um numero "))
+
+print("1 - somar os 2 numeros ")
+print("2 - multplicar ")
+print("3 - subtair ")
+print("4 - dividir ")
+
+opcao=int(input("digite a opção desejada "))
+if opcao==1:
+  print(n1+n2)
+elif opcao==2:
+  print(n1*n2)
+elif opcao==3:
+  print(n1-n2)
+elif opcao==4:
+  print(n1/n2)
+
+#hotel
+cli=float(input("digite o numero de dias "))
+dia=int=500
+if cli<15:
+  print("esse valor que voce vai ter pagar ",dia+15)
+elif(cli==15):
+  print("esse valor que voce vai ter pagar ",dia+10)
+else:
+  print("esse valor que voce vai ter pagar ",dia)
+
+#academia
+idade = float(input("qual e sua idade  ? "))
+sexo = input("Digite o sexo (M/F): ")
+
+if sexo == "M":
+    if idade <= 15:
+        valor = 60.00
+    elif idade <= 18:
+        valor = 75.0
+    elif idade <= 30:
+        valor = 90.0
+    elif idade <=40:
+         valor=85
+    else:
+        valor = 80.0
+else:
+     if idade <= 18:
+        valor = 60.00
+     elif idade <= 25:
+        valor = 90.00
+     elif idade <= 40:
+        valor = 85.00
+     else:
+        valor = 80.00
+     print("O valor da mensalidade é:", valor)
 
 
+#hotel 
+tipo=(input("digite o tipo de quarto simples ou gold  "))
+dias=float(input("digite a quantidade de dias "))
+if tipo == "simples":
+    if dias < 10:
+        valor_diaria = 100.00
+    elif dias <= 15:
+        valor_diaria = 90.00
+    else:
+        valor_diaria = 80.00
+else:
+    if dias < 10:
+        valor_diaria = 140.00
+    elif dias <= 15:
+        valor_diaria = 120.00
+    else:
+        valor_diaria = 100.0
 
-
-
-
-
+        print("O valor total a pagar é:", valor_diaria*dias)
 
